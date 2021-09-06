@@ -1,9 +1,12 @@
 @use '../util' as *;
 
-.header__logo__container {
 
-   
+header {
+
+    background-color: var(--header-bg-dark);
 }
+
+
 
 .header__logo__hamburger {
 
@@ -33,6 +36,17 @@
 
           flex: 1;
           height: rem(32);
+          background-color: var(--header-search-input);
+          
+          border: none;
+        }
+
+        input::placeholder {
+
+            color: var(--header-search-placeholder);
+            font-size: rem(16);
+            font-weight: bold;
+            padding-left: rem(5);
         }
 
         .search__icon {
@@ -41,6 +55,11 @@
             width: rem(65);
             
         }
+}
+
+.search__icon {
+
+    background-color: var(--header-search-btn);
 }
 
 .header__search__voice {
@@ -52,6 +71,7 @@
     height: rem(40);
     border-radius: 50%;
     text-align: center;
+    
 }
 
 
