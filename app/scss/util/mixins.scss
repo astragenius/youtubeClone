@@ -1,0 +1,7 @@
+@mixin flex ($dir, $dir2) {
+
+    display: flex;
+    justify-content: $dir;
+    align-items: $dir2;
+
+}
