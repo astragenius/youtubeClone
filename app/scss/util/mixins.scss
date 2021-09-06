@@ -5,3 +5,11 @@
     align-items: $dir2;
 
 }
+
+@mixin flex-col($dir, $dir2) {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: $dir;
+    align-items: $dir2;
+}

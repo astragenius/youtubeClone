@@ -6,8 +6,13 @@
 	margin: 0 auto;
 	
 
-	@include flex(space-between, center)
+	@include flex(space-between, center);
 	
+}
+
+iframe {
+
+	border: none;
 }
 
 .flex--row {
