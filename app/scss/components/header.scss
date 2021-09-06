@@ -2,12 +2,56 @@
 
 .header__logo__container {
 
-    border: 2px solid black;
+   
 }
 
+.header__logo__hamburger {
 
+    padding: rem(8);
+}
+
+.header__logo__youtube {
+
+    padding: rem(16);
+}
 
 .logo__youtube {
 
-
+    width: rem(90);
+    height: rem(20);
 }
+
+
+
+.header__search__input__container {
+
+    min-width: rem(575);
+    min-height: rem(32);
+
+
+        input {
+
+          flex: 1;
+          height: rem(32);
+        }
+
+        .search__icon {
+
+            text-align: center;
+            width: rem(65);
+            
+        }
+}
+
+.header__search__voice {
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(40);
+    height: rem(40);
+    border-radius: 50%;
+    text-align: center;
+}
+
+
