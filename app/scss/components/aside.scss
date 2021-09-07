@@ -1,2 +1,87 @@
 @use '../util' as *;
 
+
+.aside__container {
+
+    margin-bottom: rem(10);
+
+    
+
+	span {
+
+		color: white;
+		font-size: rem(16);
+	}
+
+	p {
+
+		display: inline-block;
+	}
+
+	a {
+
+		font-size: rem(13);
+	}
+
+    h2 {
+
+        overflow: hidden;
+    }
+    
+
+}
+
+
+.aside__content {
+
+    margin-left: rem(10);
+    margin-bottom: rem(10);
+}
+
+
+.aside__name {
+
+   
+
+
+    
+
+    a {
+
+        color: var(--header-search-placeholder);
+        
+    }
+
+    span {
+
+        color: var(--header-search-placeholder);
+    }
+}
+
+.aside__views {
+
+    p {
+
+        
+        color: var(--header-search-placeholder);
+        font-size: rem(12);
+        font-weight: 700;
+    }
+}
+
+.aside__new {
+
+    width: rem(33);
+    height: rem(14);
+    background-color: var(--header-search-btn);
+    @include flex(center, center);
+    
+
+    p {
+
+        color: var(--header-search-placeholder);
+        font-size: rem(12);
+        font-weight: 700;
+    }
+}
+

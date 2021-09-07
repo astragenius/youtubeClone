@@ -1,21 +1,66 @@
 @use '../util' as *;
 
+// main container
 .container {
+
+	padding: 0 rem(24);
+	max-width: rem(1850);
+	margin: 0 auto;
+}
+
+
+
+// Header 
+.container--flex {
 	padding: 0 rem(24);
 	max-width: 100vw;
 	margin: 0 auto;
-	
 
 	@include flex(space-between, center);
-	
+
 }
 
-iframe {
-
-	border: none;
-}
-
+// flex helper class
 .flex--row {
 
 	@include flex(space-between, center);
 }
+
+.flex--col {
+
+	@include flex-col(space-between, center);
+}
+
+
+// Responsive container for main and aside container
+.container--sidebar {
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.content--sidebar-main {
+
+	flex: 1 1 70%;
+	border: 2px solid white;
+}
+
+.content--sidebar--second {
+
+	flex: 1 1 20%;
+	/* border: 2px solid white; */
+
+}
+
+
+//aside container 
+
+.aside__container {
+
+	display: flex;
+	/* border: 2px solid magenta; */
+
+	
+
+}
+

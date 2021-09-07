@@ -3,8 +3,9 @@
 h1,
 h2,
 h3 {
-	margin-top: 0;
+	margin: 0;
 	line-height: 1.1;
+	color: white;
 }
 
 a,
@@ -13,7 +14,14 @@ a:active {
 	text-decoration: none;
 }
 
-h1 {
+p,
+span {
+	color: white;
+	margin: 0;
+}
 
-	color: #ffff;
+h2 {
+
+	font-size: rem(15);
+	font-weight: 500;
 }
