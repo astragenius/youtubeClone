@@ -13,10 +13,16 @@
 
    @include flex(space-between, center);
    padding: rem(12);
+   border-bottom: 1px solid var(--header-search-placeholder);
+   margin-bottom: rem(20);
    /* border: 2px solid magenta; */
     
 }
 
+.video__section__buttons {
+
+    display: flex;
+}
 
 
 .video__logo__subscribers__container {
@@ -33,12 +39,33 @@
 
 .channel__name__container {
 
-    @include flex-col(center, flex-end);
+    @include flex-col(none, none);
+    margin-left: rem(16);
 }
 
 .channel__name {
 
     @include flex(center, center);
+
+    span {
+
+        font-size: rem(15);
+    }
+    
+}
+
+.channel--check {
+
+    font-size: 15px;
+    color: var(--header-search-placeholder);
+    margin-left: 5px;
+}
+
+.channel__subscriber > span {
+
+    color: var(--header-search-placeholder);
+    font-size: 14px;
+    font-weight: 500;
 }
 
 
@@ -48,7 +75,7 @@
 
 
 
-summary {
+.summary__container {
 
     @include flex(flex-start, center);
     margin-top: rem(20);
@@ -61,6 +88,13 @@ summary {
     width: 50%;
     
     margin-left: rem(50);
+
+    p {
+
+        display: inline-block;
+        padding-bottom: 2rem;
+        padding-left: rem(16);
+    }
 }
 
 
@@ -104,11 +138,11 @@ summary {
 
 .input__container {
 
-
+        width: 100%;
         input {
 
             background-color: var(--body-bg-dark);
-            width: 100%;
+            width: 50%;
             border: none;
         }
 
@@ -128,6 +162,32 @@ summary {
     border: 1px solid var(--header-search-placeholder);
 }
 
+.channel__button__wrapper {
+
+    margin-top: rem(15);
+    @include flex(flex-start, center);
+
+    
+    button {
+
+        margin-right: rem(10);
+    }
+    span {
+
+        font-size: rem(16);
+        margin-right: rem(10);
+        
+        a {
+
+            margin-left: rem(10);
+            font-size: rem(14);
+            color: var(--header-search-placeholder);
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}
+
 
 
 
@@ -137,9 +197,28 @@ summary {
 
 .posted__comments__container {
 
-    @include flex(space-between, flex-start);
+    @include flex(flex-start, flex-start);
+    margin-bottom: rem(15);
 }
 
+.comment__content {
+
+    margin-left: rem(15);
+    width: 90%;
+}
+
+
+.channel__button__wrapper {
+
+
+    @include flex(flex-start, center);
+
+    a {
+        color: var(--header-search-placeholder);
+        font-size: rem(13);
+        font-weight: bold;
+    }
+}
 
 
 

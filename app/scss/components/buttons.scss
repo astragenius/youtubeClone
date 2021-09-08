@@ -5,6 +5,10 @@ button {
     border: none;
     border-radius: rem(5);
     cursor: pointer;
+    background: transparent;
+    color: #ffff;
+
+    @include flex(space-between, center);
     
 }
 
@@ -25,6 +29,75 @@ button {
 
         display: inline-block;
         margin-right: rem(10);
+        color: var(--header-btn-color);
     }
 }
 
+.up--down {
+
+    padding: rem(10);
+    font-size: rem(14);
+    font-weight: bold;
+
+    span {
+
+        font-size: rem(16);
+        margin-right: rem(10);
+    }
+}
+
+.up--down--small {
+
+    padding: rem(5);
+    font-size: rem(12);
+    font-weight: 400;
+
+    span {
+
+        font-size: rem(12);
+
+    }
+}
+
+
+.save--share {
+
+    @extend .up--down;
+    text-transform: uppercase;
+
+    span {
+
+        font-size: rem(24);
+    }
+}
+
+.subscribe__btn {
+
+
+    padding-left: rem(20);
+    padding-right: rem(20);
+    padding-top: rem(10);
+    padding-bottom: rem(10);
+    text-transform: uppercase;
+    font-size: rem(15);
+    font-weight: bold;
+    border-radius: 2px;
+    font-family: var(--font-body);
+    letter-spacing: 1.6;
+    background-color: var(--subscribe__btn);
+}
+
+.btn--channel--comment {
+
+    background-color: gray;
+    border-radius: rem(15);
+    font-size: (12);
+    font-weight: bold;
+    padding: rem(4);
+
+    span {
+
+        font-size: rem(12);
+        margin-left: rem(5);
+    }
+}
