@@ -150,9 +150,12 @@
 						<article>
 							<details>
 								<summary>
-									<p>
-										Today we're in Gillingham...not Gillingham...taking on Sunflower Cafe's burger, fries & shake challenge. £30 to play, but if you can sink it all inside 20 minutes the meal is FREE and you get yourself a winner's t-shirt to boot! Not only that; if you can beat the quickest time you win £50
-									</p>
+									<div class="summary__text">
+												<p>
+												Today we're in Gillingham...not Gillingham...taking on Sunflower Cafe's burger, fries & shake challenge. £30 to play, but if you can sink it all inside 20 minutes the meal is FREE and you get yourself a winner's t-shirt to boot! Not only that; if you can beat the quickest time you win £50
+												</p>
+									</div>
+									
 									
 								</summary>
 								<p>
@@ -203,7 +206,7 @@
 								<div class="">
 
 									<!-- How many comments  plus Sort button -->
-									<div class="">
+									<div class="comment__section__comments">
 										<span>1,253</span>
 										<span>Comments</span>
 										<button><span class="material-icons">sort</span>Sort By</button>
@@ -211,17 +214,17 @@
 
 									<!-- User Avatar plus Input element for comments -->
 
-									<div class="">
+									<div class="comment__section__input__container">
 
 										<!-- User avatar -->
 										<img class="avatar--comment" src="/app/img/avatar.jpg" alt="user-avatar-default">
 
 										<!-- Div with input element and div vor border-top. -->
-										<div class="">
-											<div class="">
-												<input type="text" name="comment-input" id="" placeholder="Add a publick comment...">
+										<div class="comment__input__wrapper">
+											<div class="input__container">
+												<input type="text" name="comment-input" id="" placeholder="Add a public comment...">
 											</div>
-											<div class=""></div>
+											<div class="comment__input__border__div"></div>
 
 										</div>
 									</div>
@@ -230,35 +233,42 @@
 
 								<!-- Posted comments -->
 
-								<article>
+								<article class="posted__comments__container">
 									<!-- Avatar -->
 									<div class="">
 										<img class="avatar--comment" src="/app/img/avatar.jpg" alt="avatar-img">
 									</div>
 
-									<!-- Channel button -->
-									<button><span class="material-icons"></span>BeardMeatsFood</button>
-									<a href="#">1 month ago</a>
+									<div class="comment__content">
 
-									<!-- Comment -->
-									<details>
-										<summary>
-											<p>
-												Greetings you charming bunch! Thanks for joining me for another video…I’ve truly been astounded by the amount of people watching and subscribing lately, so from the bottom of my beard; thank you very much. 
 
-												wn south; around the Gloucestershire/Wiltshire/Dorset area. I apologise for the 
-											</p>
-										</summary>
-										<p>
-											reverb in the room; it was largely unavoidable. Also, I made a bit of a mistake with the prize. Turns out you get £50 cash money if you beat the fastest time, not a voucher…which if anything is actually way better! 
+												<!-- Channel button -->
+											<button><span class="material-icons"></span>BeardMeatsFood</button>
+											<a href="#">1 month ago</a>
 
-										</p>
-									</details>
-									<!-- Like and dislike buttons -->
-									<button><span class="material-icons">thumb_up</span>324</button>
-									<button><span class="material-icons">thumb_down</span></button>
-									<span class="material-icons">favorite</span>
-									<span><a href="#">Reply</a></span>
+											<!-- Comment -->
+											<details>
+												<summary>
+													<p>
+														Greetings you charming bunch! Thanks for joining me for another video…I’ve truly been astounded by the amount of people watching and subscribing lately, so from the bottom of my beard; thank you very much. 
+
+														wn south; around the Gloucestershire/Wiltshire/Dorset area. I apologise for the 
+													</p>
+												</summary>
+												<p>
+													reverb in the room; it was largely unavoidable. Also, I made a bit of a mistake with the prize. Turns out you get £50 cash money if you beat the fastest time, not a voucher…which if anything is actually way better! 
+
+												</p>
+											</details>
+											<!-- Like and dislike buttons -->
+											<button><span class="material-icons">thumb_up</span>324</button>
+											<button><span class="material-icons">thumb_down</span></button>
+											<span class="material-icons">favorite</span>
+											<span><a href="#">Reply</a></span>
+
+
+									</div>
+									
 
 
 								</article>

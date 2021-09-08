@@ -7,23 +7,22 @@
 
 
 
-
+// video discripton section
 
 .video__section__view__buttons__wrapper {
 
    @include flex(space-between, center);
    padding: rem(12);
-   border: 2px solid magenta;
+   /* border: 2px solid magenta; */
     
 }
-
 
 
 
 .video__logo__subscribers__container {
 
     @include flex(space-between, center);
-    border: 2px solid magenta;
+    /* border: 2px solid magenta; */
 }
 
 .video__logo__container {
@@ -44,6 +43,102 @@
 
 
 
+
+// Detailt video description
+
+
+
+summary {
+
+    @include flex(flex-start, center);
+    margin-top: rem(20);
+    margin-bottom: rem(20);
+    border-bottom: 1px solid var(--header-search-placeholder);
+}
+
+.summary__text {
+
+    width: 50%;
+    
+    margin-left: rem(50);
+}
+
+
+// Comment section
+
+
+
+.comment__section__comments {
+
+    @include flex(flex-start, center);
+    margin-bottom: rem(30);
+
+        span {
+
+            margin-right: rem(5);
+        }
+
+
+        button {
+
+            margin-left: rem(30);
+        }
+   
+
+}
+
+
+.comment__section__input__container {
+
+    @include flex(flex-start, center);
+    margin-bottom: rem(30);
+}
+
+.comment__input__wrapper {
+
+    @include flex-col(center, flex-start);
+    width: 100%;
+    margin-left: rem(15);
+
+}
+
+.input__container {
+
+
+        input {
+
+            background-color: var(--body-bg-dark);
+            width: 100%;
+            border: none;
+        }
+
+        input::placeholder {
+
+            color: var(--header-search-placeholder);
+            font-style: var(--font-body);
+            font-size: rem(12);
+            font-weight: 700;
+        }
+}
+
+.comment__input__border__div {
+
+    width: 100%;
+    flex: 1;
+    border: 1px solid var(--header-search-placeholder);
+}
+
+
+
+
+
+// posted comments 
+
+
+.posted__comments__container {
+
+    @include flex(space-between, flex-start);
+}
 
 
 
